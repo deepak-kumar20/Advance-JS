@@ -22,8 +22,21 @@
 
 //------------X----------------------------------
 //undefined vs not defined
-console.log(x);
+// console.log(x);
 //here x is undefined means we have declared x but not intialized it with any value so memory is allocated to x but as a placeholder it will have undefined
-var x = 5;
-console.log(x);
-console.log(y);//here y is not defined means we have not declared y anywhere in the code and no memory is allocated to y,it will throw referece error if we try to access it
+// var x = 5;
+// console.log(x);
+// console.log(y);//here y is not defined means we have not declared y anywhere in the code and no memory is allocated to y,it will throw referece error if we try to access it
+
+//-------------------X-----------------------
+//Scope Chain and lexical environment
+//Lexical environment is the local memory along with the reference to its lexical environment of its parent
+// function a(){
+//    var x = 10;
+//    b();
+//    function b(){
+//       console.log(x);
+//    }
+// }
+// a();
+//we can access x in b because of scope chain and lexical environment
