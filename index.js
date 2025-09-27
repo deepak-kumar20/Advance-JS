@@ -13,8 +13,17 @@
 
 // ---------------------------X------------------
 //Shortest program in js
-var a = 10;
+// var a = 10;
 //a is in global scope means outside any funtion
 //when we run empty js file it will create a global object called window in browser and global in nodejs
-console.log(window.a)
-console.log(this.a);//this also point to window object in browser
+// console.log(window.a)
+// console.log(this.a);//this also point to window object in browser
+
+
+//------------X----------------------------------
+//undefined vs not defined
+console.log(x);
+//here x is undefined means we have declared x but not intialized it with any value so memory is allocated to x but as a placeholder it will have undefined
+var x = 5;
+console.log(x);
+console.log(y);//here y is not defined means we have not declared y anywhere in the code and no memory is allocated to y,it will throw referece error if we try to access it
